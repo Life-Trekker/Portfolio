@@ -1,0 +1,107 @@
+<!--
+Author: Josh T
+File Name: index.html for Portfolio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh T - Portfolio</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="images/Logo.png" type="image/png">
+
+    <!-- Jura Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- link to js -->
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- header contains logo and links to the two pages -->
+    <header>
+        <a href="index.html">Portfolio</a>
+
+        <img src="images/Logo.png" id="logo" alt="a white diamond logo, with the letters J and T inside">
+
+        <a href="contactMe.html">Contact Me</a>
+
+    </header>
+
+    <!-- main page contains about me section and projects section -->
+    <main>
+
+
+
+        <!-- about me section has page heading and about me info -->
+        <div id="about-section">
+            <div id="name-title">
+                <h1>Hello, I'm Josh T</h1>
+            </div>
+
+            <p>I'm a 4.0 student, programmer, web designer, game developer and much more. <br>
+                I love all things digital and dream of finding a job that combines software with storytelling. <br>
+                I currently work as a computer science tutor at my home college, but I'm actively looking for entry
+                level positions and interships.<br>
+                I'm also finishing up my A.S. in Game Design and plan to transfer to earn my B.S. in
+                Computer Science.<br>
+                I've worked in many languages including: C, C++, Java, Python, HTML, CSS, Javascript and MIPS Assembly.<br>
+
+            </p>
+
+        </div>
+
+
+        <!-- projects section has projects subheading and grid of project tiles -->
+        <div id="projects-section">
+
+            <h1>Projects:</h1>
+
+            <!-- each project tile has an image and text that link to the project's page -->
+
+            <a class="project-tile" href="projects/starWarsCharacterSearch/index.html" target="_blank">
+                <img src="images/starWarsSearch.png" alt="a yellow darth vader mask inside a magnifying glass on a black background">
+
+                <div class="project-text">
+                    <h3>Star Wars Character Search Engine</h3>
+                </div>
+            </a>
+
+            <a class="project-tile" href="https://github.com/Life-Trekker/Portfolio-Webpage/tree/main/projects/digital7WondersScoreSheet" target="_blank">
+                <img src="images/7WondersScoreSheet.png" alt="a golden 7 on a tan background with a painterly texture">
+
+                <div class="project-text">
+                    <h3>7 Wonders Score Sheet</h3>
+                </div>
+            </a>
+
+            <a class="project-tile" href="https://github.com/Life-Trekker/Portfolio-Webpage/tree/main/projects/mipsAssemblyUtilitiesLibrary" target="_blank">
+                <img src="images/mipsUtilities.png" alt="a grey wrench and the word MIPS on a rust colored background">
+
+                <div class="project-text">
+                    <h3>MIPS Assembly Utilities Library</h3>
+                </div>
+            </a>
+
+        </div>
+
+    </main>
+
+
+
+
+
+</body>
+
+</html>

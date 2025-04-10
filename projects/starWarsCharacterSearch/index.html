@@ -1,0 +1,78 @@
+<!--
+Author: Josh T
+File Name: index.html for Star Wars Character  Search Engine
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Character Search</title>
+
+    <!--include a favicon-->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!--include the CSS in the main.css file-->
+    <link rel="stylesheet" href="main.css">
+
+    <!--include the JS in the main.js file-->
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- add a heading to the page -->
+    <h1>Star Wars Character Search</h1>
+
+    <!-- make a div to hold the search input box, the search history, the search button and the random button -->
+    <div id="searchBar">
+
+        <!-- add a button that will search the SWAPI for the name the user has entered -->
+        <button id="searchButton">
+            <p>Search</p><img src="images/GlassIcon.png"
+                alt="a yellow magnifying glass icon.  click this to search after you type in the character name">
+        </button>
+
+        <!-- the user will type the name they want to search into an input tag with type text -->
+        <!-- when it is clicked, it will erase the text inside it -->
+        <input id="searchBox" type="text" onfocus="this.value=''" placeholder="Enter a Star Wars character's name">
+
+        <!-- add a button that will search for a random star wars character -->
+        <button id="randomButton">
+            <p>Random</p><img src="images/RandomIcon.png"
+                alt="a yellow question mark icon.  click this to get info on a random star wars character">
+        </button>
+
+        <!-- add a div to hold the search history -->
+        <div>
+
+            <!-- add a subheading -->
+            <p>Search History:</p>
+
+            <!-- add a select box that will be populated with the names the user has searched before -->
+            <select id="pastSearches">
+            </select>
+        </div>
+
+    </div>
+
+
+    <!-- add a div to hold the results from the most recent search -->
+    <div id="searchResults">
+
+        <!-- add message that will be overwritten if JS is enabled -->
+        <h2>Looks like you don't have JavaScript enabled.<br>
+            Unfortunately, this page won't work without it.<br>
+            If you would still like to access this information, go <a href="https://swapi.dev/api/people/">here</a>.
+        </h2>
+
+    </div>
+
+
+
+</body>
+
+</html>

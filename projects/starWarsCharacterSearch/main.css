@@ -1,0 +1,269 @@
+/*
+Author: Josh T
+File Name: main.css for Star Wars Character  Search Engine
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h2,
+h3,
+ul,
+section,
+aside,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* give the page a space background image
+set the default font to Lucida Sans, 20pts
+*/
+body {
+    background-image: url(images/starBackground.jpg);
+    font-size: 20pt;
+    color: white;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+
+}
+
+/* make all h1 headings yellow and centered
+make their font size 9.5vmin and a maximum of 42pt
+*/
+h1 {
+    margin: 2%;
+    font-size: min(9.5vmin, 42pt);
+    text-align: center;
+    color: rgb(255, 196, 0);
+}
+
+/* center all h2 headings and make their font size 7vmin and a maximum of 32pt */
+h2 {
+    text-align: center;
+    font-size: min(7vmin, 32pt);
+}
+
+/* make all h3 headings font size 4.5vmin and a maximum of 20pt */
+h3 {
+    font-size: min(4.5vmin, 20pt);
+    margin: 2%
+}
+
+/* make all paragraphs font size 1 vmin and a minimum of 8pt */
+p {
+    font-size: max(8pt, 1vmin);
+    margin: 0;
+}
+
+/* make all links yellow */
+a {
+    color: rgb(255, 196, 0);
+}
+
+/* have the search bar display as a 2 by 3 grid and hide it when js isn't enabled */
+#searchBar {
+    width: 80%;
+    margin: auto;
+
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+
+    align-items: center;
+
+    display: none;
+
+}
+
+/* have the search history div be 55% wide and take up multiple grid columns */
+#searchBar div {
+    padding: 2%;
+
+    width: 55%;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* have the input tag fill the entire cell and have 2.5vmin sized font */
+input {
+    margin: 0 1%;
+    height: 100%;
+    font-size: 2.5vmin;
+}
+
+/* when the input tag is clicked, have it gain a yellow outline */
+input:focus {
+    outline: 3px rgb(255, 196, 0) solid;
+}
+
+/* the search glass and random icons should take up their entire grid cells
+they should also be cropped into circles
+*/
+#searchBar img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+}
+
+/* all buttons should be partially transparent and have rounded corners */
+button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+/* when the button is clicked, have it play the pressed animation */
+button:active {
+    animation: pressed 1.2s ease;
+}
+
+/* give the search results some margin  */
+#searchResults {
+    margin: 2%;
+}
+
+/* give all paragraphs in the search result a tiny bit of margin */
+#searchResults p {
+    margin: 10px;
+}
+
+/* have the search content display in a 5 by 3 grid with some margin, padding and rounded corners */
+#searchContent {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 80%;
+    margin: 2% auto;
+    padding: 5%;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-rows: repeat(5, 100%);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+/* have the h2 heading in the search content span all the grid columns and give it a white border on the bottom */
+#searchContent h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    border-bottom: white 5px solid;
+    margin: 5px 0px;
+}
+
+/* have the planet info and film info span all the grid columns */
+#planetInfo,
+#filmInfo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+/* give the planet info some extra margin */
+#planetInfo {
+    margin: 2% 0;
+}
+
+/* give the h3 headings in the film info some extra margin */
+#filmInfo h3 {
+    margin: 2% 0;
+}
+
+
+/* have all info titles be yellow, italic and in Courier New font */
+b {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 196, 0);
+}
+
+/* have the select box have a white background color and rounded corners */
+select {
+    margin: 1%;
+
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+
+/* have all select options be yellow */
+select option {
+    color: rgb(255, 196, 0);
+
+}
+
+
+/* for tablet sized screens */
+@media only screen and (min-width : 700px) {
+
+    /* change the dimensions of the search bar columns */
+    #searchBar {
+        grid-template-columns: 8% 84% 8%;
+    }
+
+    /* make the search bar history less wide */
+    #searchBar div {
+        width: 30%;
+    }
+
+}
+
+
+/* on desktop sized screens, have the search bar, search history and search content resize */
+@media only screen and (min-width : 1200px) {
+    #searchBar {
+        grid-template-columns: 7% 86% 7%;
+    }
+
+    #searchContent {
+
+        width: 50%;
+    }
+
+    #searchBar {
+        width: 50%;
+
+    }
+
+    #searchBar div {
+        width: 30%;
+    }
+
+
+
+}
+
+/* make an animation that plays when a button is pressed */
+@keyframes pressed {
+
+    /*when the animation starts, shrink the element to 80%*/
+    0% {
+        scale: 80%;
+    }
+
+    /*halfway through the animation, set the element to a little larger than normal size*/
+    50% {
+        scale: 110%;
+    }
+
+    /*when the animation ends, set the element to a normal size*/
+    100% {
+        scale: 100%;
+    }
+
+}

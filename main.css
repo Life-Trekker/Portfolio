@@ -1,0 +1,247 @@
+/*
+Author: Josh T
+File Name: main.css for Portfolio
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h2,
+h3,
+ul,
+section,
+aside,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* General Styling */
+
+/* entire page has gradient background and uses Jura font */
+body {
+  background-color: rgb(21, 8, 1);
+  background: radial-gradient(circle, black, rgb(21, 8, 1));
+
+  font-family: Jura, Arial, Helvetica, sans-serif;
+}
+
+/* paragraphs are white and 14pt size */
+p {
+  color: white;
+  font-size: min(4vmin, 14pt);
+}
+
+
+
+
+/* Header Styling */
+
+/* header is a 1 x 3 grid and has a bottom border */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+
+  align-items: center;
+  justify-items: center;
+
+  width: 60%;
+  margin: auto;
+  padding: 1%;
+
+  border-bottom: #F47851 1px dashed;
+}
+
+/* header links are white by default */
+header a {
+  color: white;
+  font-size: min(4.5vmin, 20pt);
+
+  text-decoration: none;
+}
+
+/* header links glow orange when hovered over */
+header a:hover {
+  color: #F47851;
+  text-shadow: 0px 1px 20px #F47851;
+}
+
+/* header logo takes up 50% of space*/
+header img {
+  width: 50%;
+}
+
+
+
+/* About Me Section Styling */
+
+#about-section {
+
+  width: 60%;
+  margin: 1% auto;
+
+}
+
+/* page heading is 36pt text with a radial gradient and glow*/
+#name-title {
+  color: transparent;
+  font-size: min(6vmin, 36pt);
+
+  text-align: center;
+  text-shadow: 0px 1px 20px #F47851;
+
+  background: radial-gradient(circle, #F47851, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  margin: 5%;
+}
+
+
+
+
+
+/* Projects Section Styling */
+
+/* projects section is a 1 column grid 
+with the number of rows needed to fit all tiles
+*/
+#projects-section {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  align-items: center;
+  justify-items: center;
+
+}
+
+
+/* subheading to projects section is white */
+#projects-section h1 {
+  color: white;
+  margin: 5%;
+
+
+}
+
+/* project tile images position is relative so they appear below the text when the text is visible */
+.project-tile {
+
+  position: relative;
+  top: 0;
+  left: 0;
+
+  margin: 2%;
+  
+}
+
+/* images in project tiles resize to fit space */
+.project-tile img {
+  height: 40vh;
+  width: 40vh;
+
+  margin: 5% auto;
+
+  border-radius: 10%;
+
+  background-size: cover;
+  transition: opacity 0.5s ease;
+
+}
+
+/* project tile text is orange and centered 
+project tile text position is absolute so it appears above the image
+it is also centered in it's grid cell
+*/
+.project-text {
+
+  color: #F47851;
+  font-size: min(4vmin, 14pt);
+
+  text-shadow: 0px 1px 20px #F47851;
+
+  text-align: center;
+  text-decoration: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+}
+
+
+
+/* Contact Me Section Styling (Contact Me Page) */
+
+/* contact me section is a 1 column grid 
+with the number of rows needed to fit all tiles */
+#contact-section {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  align-items: center;
+  justify-items: center;
+
+  margin: 5%;
+
+}
+
+/* contact me section image linkes have margins */
+#contact-section a
+{
+  margin: 2%;
+}
+
+/* contact me image links resize with screen 
+when the mouse hovers off these images, transition them back to 0% opacity
+*/
+#contact-section img {
+  height: 20vh;
+  width: 20vh;
+
+
+  transition: opacity 0.5s ease;
+}
+
+/* when the image links in the contact me section are hovered over, 
+they transition to becoming 50% transparent */
+#contact-section img:hover {
+  opacity: 50%;
+  transition: all 0.5s ease;
+}
+
+
+/* on desktop sized screens,*/
+@media only screen and (min-width : 1200px) {
+
+  /* projects section is a 3 column grid */
+  #projects-section{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* subheading to projects section spans all three columns */
+  #projects-section h1 {
+  
+    grid-column-start: 1;
+    grid-column-end: 4;
+  
+  }
+
+  /* contact me section is a 3 column grid */
+  #contact-section{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+
+}
