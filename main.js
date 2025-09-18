@@ -46,8 +46,8 @@ function changeTileOpacity(index, showText) {
   //if we want to show the project tile's text
   if (showText) {
 
-    //fade the project tile image to 50% opacity
-    project_tiles[index].children[0].style.opacity = "50%";
+    //fade the project tile image to 35% opacity
+    project_tiles[index].children[0].style.opacity = "35%";
 
     //show the project tile text
     project_text[index].style.opacity = "100%";

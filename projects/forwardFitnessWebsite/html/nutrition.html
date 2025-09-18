@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--
+Author:<br> Josh T
+File Name:<br> index.html for Forward Fitness Website
+-->
+
+<html lang="en">
+
+<head>
+    <title>Forward Fitness Club - Nutrition</title>
+
+    <!--link to external css styling file-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--include the JS in the main.js file-->
+    <script src="../js/main.js"></script>
+
+    <!--embed K2D font from google fonts-->
+    <link rel="preconnect" href="https:<br>//fonts.googleapis.com">
+    <link rel="preconnect" href="https:<br>//fonts.gstatic.com" crossorigin>
+    <link
+        href="https:<br>//fonts.googleapis.com/css2?family=K2D:<br>ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!--embed Khula font from google fonts-->
+    <link rel="preconnect" href="https:<br>//fonts.googleapis.com">
+    <link rel="preconnect" href="https:<br>//fonts.gstatic.com" crossorigin>
+    <link href="https:<br>//fonts.googleapis.com/css2?family=Khula:<br>wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--Start of Header-->
+    <header>
+
+        <!--include logo image within a figure-->
+        <figure>
+            <img src="../images/forward-fitness-logo.png" alt="forward fitness club logo">
+        </figure>
+
+        <!--End of Header-->
+    </header>
+
+    <!--Start of Nav Bar-->
+    <nav>
+
+        <!--insert unordered list of links to other pages on this site-->
+        <ul>
+            <li><a href="index.html" title="link to home page">Home</a></li>
+            <li><a href="aboutUs.html" title="link to about us page">About Us</a></li>
+            <li class="selected_page"><a href="nutrition.html" title="link to nutrition page">Nutrition</a></li>
+        </ul>
+
+        <!--End of Nav Bar-->
+    </nav>
+
+    <!--Start of Main-->
+    <main>
+
+        <!--insert sub-heading text-->
+        <h3>Our in house nutritionists are here to help you eat right.  Below are some of their most recommended meals.</h3>
+
+        <!--create a div with three button controls inside to change the gallery-->
+        <div class="galleryControls">
+            <button class="bfastBtn">Breakfast</button>
+            <button class="lunchBtn">Lunch</button>
+            <button class="dinnerBtn">Dinner</button>
+        </div>
+
+        <!--create a figure to hold all the breakfast gallery images-->
+        <figure id="breakfast" class="gallery">
+
+            <!--create a sub-heading-->
+            <h2>Breakfast Gallery</h2>
+
+            <!--create a paragraph to display the time these dishes are served-->
+            <p>A Great Day Starts with a Great Breakfast</p>
+
+            <!--create 10 images that each have alt text and a class of slide-->
+            <img class="slide" src="../images/meal-images/breakfast/avocado-toast.jpg"
+                alt="Avocado Toast:<br><br>  Whole grain bread + mashed avocado + cherry tomatoes + poached egg (optional) + chili flakes">
+            <img class="slide" src="../images/meal-images/breakfast/banana-toast.jpg"
+                alt="Peanut Butter Banana Toast:<br><br>  Whole grain toast + natural peanut butter + banana slices + chia seeds">
+            <img class="slide" src="../images/meal-images/breakfast/cottage-cheese.jpg"
+                alt="Cottage Cheese Bowl:<br><br>  Low-fat cottage cheese + pineapple chunks or berries + ground flaxseed">
+            <img class="slide" src="../images/meal-images/breakfast/egg.jpg"
+                alt="Scrambled Eggs:<br><br>  Scrambled eggs + black beans + avocado">
+            <img class="slide" src="../images/meal-images/breakfast/muffin.jpg"
+                alt="Healthy Breakfast Muffins:<br><br>  Oats + mashed banana + shredded zucchini + minimal added sugar">
+            <img class="slide" src="../images/meal-images/breakfast/overnight-oats.jpg"
+                alt="Overnight Oats:<br><br>  Rolled oats + chia seeds + almond milk + berries + honey">
+            <img class="slide" src="../images/meal-images/breakfast/parfait.jpg"
+                alt="Greek Yogurt Parfait:<br><br>  Plain Greek yogurt + granola + fresh fruit (e.g., banana, strawberries) + a drizzle of honey">
+            <img class="slide" src="../images/meal-images/breakfast/smoothie.jpg"
+                alt="Green Smoothie:<br><br>  Spinach + frozen banana + Greek yogurt + protein powder + almond milk">
+            <img class="slide" src="../images/meal-images/breakfast/sweet-potatoes.jpg"
+                alt="Sweet Potato Hash:<br><br>  Diced sweet potatoes + bell peppers + onions + eggs on top (fried or poached)">
+            <img class="slide" src="../images/meal-images/breakfast/veggie-omlette.jpg" 
+                alt="Veggie Omlette:<br><br>  Eggs or egg whites + spinach + tomatoes + mushrooms + onions">
+
+        </figure>
+
+        <!--create a figure to hold all the breakfast gallery images-->
+        <figure id="lunch" class="gallery">
+
+            <!--create a sub-heading-->
+            <h2>Lunch Gallery</h2>
+
+            <!--create a paragraph to display the time these dishes are served-->
+            <p>Make Lunch Hearty and Heathly</p>
+
+            <!--create 10 images that each have alt text and a class of slide-->
+            <img class="slide" src="../images/meal-images/lunch/brown-rice.jpg"
+                alt="Brown Rice Bowl:<br>  Brown rice + grilled tofu or salmon + steamed broccoli + edamame + sesame seeds + soy sauce or tahini drizzle">
+            <img class="slide" src="../images/meal-images/lunch/chicken-salad.jpg"
+                alt="Grilled Chicken Salad:<br>  Mixed greens + grilled chicken + cherry tomatoes + cucumber + avocado + olive oil & lemon dressing">
+            <img class="slide" src="../images/meal-images/lunch/egg-salad.jpg"
+                alt="Avocado Egg Salad:<br>  Hard-boiled eggs + mashed avocado + Greek yogurt or mustard + whole grain bread or in a wrap">
+            <img class="slide" src="../images/meal-images/lunch/pasta.jpg"
+                alt="Lentil Pasta with Veggies:<br>  Red lentil pasta + sautéed zucchini, mushrooms, and spinach + tomato sauce or pesto">
+            <img class="slide" src="../images/meal-images/lunch/quinoa-bowl.jpg"
+                alt="Quinoa & Chickpea Bowl:<br>  Quinoa + roasted chickpeas + arugula + roasted sweet potatoes + tahini or lemon vinaigrette">
+            <img class="slide" src="../images/meal-images/lunch/sandwich.jpg"
+                alt="Tuna Salad Sandwich:<br>  Canned tuna (in water) + Greek yogurt + celery + onion + italian style bread">
+            <img class="slide" src="../images/meal-images/lunch/soup.jpg"
+                alt="Minestrone Soup:<br>  Diced tomatoes + assorted veggies + veggie broth + beans">
+            <img class="slide" src="../images/meal-images/lunch/stir-fry.jpg"
+                alt="Chicken & Veggie Stir-Fry:<br>  Lean chicken breast + mixed veggies (bell peppers, snap peas, carrots) + garlic-ginger sauce + brown rice or cauliflower rice">
+            <img class="slide" src="../images/meal-images/lunch/taco.jpg"
+                alt="Black Bean Tacos:<br>  Corn tortillas + black beans + avocado + cabbage slaw + salsa + lime juice">
+            <img class="slide" src="../images/meal-images/lunch/wrap.jpg" 
+                alt="Whole Grain Wrap:<br>  Whole wheat tortilla + turkey or hummus + spinach + shredded carrots + bell peppers + mustard or yogurt dressing">
+
+        </figure>
+
+        <!--create a figure to hold all the breakfast gallery images-->
+        <figure id="dinner" class="gallery">
+
+            <!--create a sub-heading-->
+            <h2>Dinner Gallery</h2>
+
+            <!--create a paragraph to display the time these dishes are served-->
+            <p>Dinner which will Nourish so you can Flourish</p>
+
+            <!--create 10 images that each have alt text and a class of slide-->
+            <img class="slide" src="../images/meal-images/dinner/burger.jpg"
+                alt="Turkey Burger:<br>  Ground turkey + artisan roll + lettuce + onion + tomato">
+            <img class="slide" src="../images/meal-images/dinner/chicken-bowl.jpg"
+                alt="Greek Chicken Bowl:<br>  Grilled chicken + brown rice or farro + cucumber, tomato, olives, feta + tzatziki sauce">
+            <img class="slide" src="../images/meal-images/dinner/cod.jpg"
+                alt="Baked Cod with Roasted Veggies:<br>  Light white fish + carrots + zucchini + broccoli">
+            <img class="slide" src="../images/meal-images/dinner/curry.jpg"
+                alt="Chickpea and Spinach Curry:<br>  Chickpeas + spinach + coconut milk + curry spices + whole grain naan">
+            <img class="slide" src="../images/meal-images/dinner/falafel.jpg"
+                alt="Baked Falafel with Quinoa Tabbouleh:<br>  Homemade or store-bought baked falafel + cucumber + tomato + quinoa + tahini sauce">
+            <img class="slide" src="../images/meal-images/dinner/meatballs.jpg"
+                alt="Zucchini Noodles with Turkey Meatballs:<br>  Spiralized zucchini (zoodles) + lean turkey meatballs + marinara sauce">
+            <img class="slide" src="../images/meal-images/dinner/ramen.jpg"
+                alt="Healthy Ramen Bowl:<br>  Whole grain noodles + miso or low-sodium broth + mushrooms, bok choy, carrots + soft-boiled egg">
+            <img class="slide" src="../images/meal-images/dinner/salmon.jpg"
+                alt="Grilled Salmon with Quinoa and Asparagus:<br>  Salmon + quinoa + roasted or steamed asparagus + lemon + herbs">
+            <img class="slide" src="../images/meal-images/dinner/stuffed-peppers.jpg"
+                alt="Stuffed Bell Peppers:<br>  Bell peppers + quinoa + black beans + corn + tomatoes + shredded cheese">
+            <img class="slide" src="../images/meal-images/dinner/tofu-bowl.jpg" 
+                alt="Thai Peanut Tofu Bowl:<br>  Tofu + cabbage slaw + shredded carrots + brown rice or rice noodles + spicy peanut sauce">
+
+        </figure>
+
+        <!--all meals and ingredient lists generated using ChatGPT-->
+
+        <!--create a paragraph to hold the caption for each image-->
+        <p id="caption">temp</p>
+
+        <!--create a div with two button controls inside-->
+        <div class="controls">
+            <button class="backBtn">Back</button>
+            <button class="nextBtn">Next</button>
+        </div>
+
+        <!--End of Main-->
+    </main>
+
+    <!--Start of Footer-->
+    <footer class="footer_grid">
+
+        <!--insert social media icon links-->
+        <div id="social_icons">
+            <figure>
+                <a href="#" title="link to future fitness club facebook group">
+                    <img src="../images/social-media-icons/facebook_logo.png"
+                        alt="mint green facebook logo in a circle">
+                </a>
+            </figure>
+
+            <figure>
+                <a href="#" title="link to future fitness club twitter page">
+                    <img src="../images/social-media-icons/twitter_logo.png" alt="mint green twitter logo in a circle">
+                </a>
+            </figure>
+
+            <figure>
+                <a href="#" title="link to future fitness club instagram page">
+                    <img src="../images/social-media-icons/instagram_logo.png"
+                        alt="mint green instagram logo in a circle">
+                </a>
+            </figure>
+
+            <figure>
+                <a href="#" title="link to future fitness club youtube channel">
+                    <img src="../images/social-media-icons/youtube_logo.png" alt="mint green youtube logo in a circle">
+                </a>
+            </figure>
+        </div>
+
+        <!--insert the left half of the footer text-->
+        <div id="left_footer">
+            <p>(814) 555-9608</p>
+            <p>forwardfitness@club.net</p>
+        </div>
+
+        <!--insert the right half of the footer text-->
+        <div id="right_footer">
+            <p>&copy; 2024 Forward Fitness</p>
+            <p>All Rights Reserved</p>
+        </div>
+
+
+        <!--insert the disclaimer-->
+        <div id="disclaimer">
+            <p>This fictitious website was created as an academic exercise for the Diablo Valley College course,
+                ARTDM-171:<br> Web Design I. In no way should this content be considered or used as a source of factual
+                public information.</p>
+        </div>
+
+        <!--End of Footer-->
+    </footer>
+
+
+</body>
+
+</html>

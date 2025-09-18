@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--
+Author: Josh T
+File Name: index.html for Forward Fitness Website
+-->
+
+<html lang="en">
+
+<head>
+    <title>Forward Fitness Club - Home</title>
+
+    <!--link to external css styling file-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--include the JS in the main.js file-->
+    <script src="../js/main.js"></script>
+
+    <!--embed K2D font from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--Start of Header-->
+    <header>
+
+        <!--include logo image within a figure-->
+        <figure>
+            <img src="../images/forward-fitness-logo.png" alt="forward fitness club logo">
+        </figure>
+
+        <!--End of Header-->
+    </header>
+
+    <!--Start of Nav Bar-->
+    <nav>
+
+        <!--insert unordered list of links to other pages on this site-->
+        <ul>
+            <li class="selected_page"><a href="index.html" title="link to home page">Home</a></li>
+            <li><a href="aboutUs.html" title="link to about us page">About Us</a></li>
+            <li><a href="nutrition.html" title="link to nutrition page">Nutrition</a></li>
+        </ul>
+
+        <!--End of Nav Bar-->
+    </nav>
+
+    <!--Start of Main-->
+    <main>
+
+        <!--insert the grid with the welcome message and images-->
+        <div class="welcome_grid">
+
+            <!--insert the welcome message heading-->
+            <h1 class="welcome_message">Welcome to Forward Fitness Club!</h1>
+
+
+            <!--these images will be hidden in the mobile layout-->
+            <figure>
+                <img src="../images/home-images/main-photo-B.webp" alt="woman lifting dumbells in an exercise class">
+            </figure>
+
+            <figure>
+                <img src="../images/home-images/main-photo-A.jpg" alt="man lifting a barbell over his head in a gym">
+            </figure>
+
+        </div>
+
+        <!--insert home page paragraphs-->
+        <p class="home_text">Our mission is to help our clients meet their fitness and nutrition goals.</p>
+
+        <p class="home_text">
+            If you have struggled with getting healthy and need the motivation and resources to make a healthy lifestyle
+            change, contact us today.
+            Our facility includes state-of-the-art equipment, convenient group training classes, and nutrition tips and
+            information to keep you healthy.
+        </p>
+
+        <p class="home_text">
+            We provide a <b>FREE</b>, one-week membership to experience the benefits of our equipment and facility.
+            This one-week trial gives you complete access to our equipment, training classes, and nutrition planning.
+        </p>
+
+        <!--insert button that links to the Contact Us page-->
+        <form action="contactUs.html" title="link to contact us page">
+            <button class="button">Contact us today to start your free trial!</button>
+        </form>
+
+
+        <div class="tile_grid">
+
+            <!--insert group fitness title and image-->
+
+            <figure class="category">
+                <figcaption>
+                    Group Fitness
+                </figcaption>
+
+
+                <a href="aboutUs.html" title="link to about us page"><img src="../images/home-images/fitness-group.jpg"
+                        alt="four people holding yoga mats">
+                </a>
+
+            </figure>
+
+            <!--insert start today title and image-->
+
+            <figure class="category">
+                <figcaption>
+                    Start Today
+                </figcaption>
+
+                <a href="contactUs.html" title="link to contact us page"> <img
+                        src="../images/home-images/personal-trainer.jpg"
+                        alt="a muscular personal trainer holding a clipboard">
+                </a>
+            </figure>
+
+            <!--insert meal plans title and image-->
+            <figure class="category">
+                <figcaption>
+                    Meal Plans
+                </figcaption>
+
+                <a href="nutrition.html" title="link to nutrition page"><img src="../images/home-images/food-heart.jpg"
+                        alt="a group of healthy foods in the shape of a heart on a wood backdrop">
+                </a>
+            </figure>
+
+
+        </div>
+
+        <!--End of Main-->
+    </main>
+
+    <!--Start of Footer-->
+    <footer class="footer_grid">
+
+        <!--insert social media icon links-->
+        <div id="social_icons">
+            <figure>
+                <a href="#" title="link to future fitness club facebook group">
+                    <img src="../images/social-media-icons/facebook_logo.png"
+                        alt="mint green facebook logo in a circle">
+                </a>
+            </figure>
+
+            <figure>
+                <a href="#" title="link to future fitness club twitter page">
+                    <img src="../images/social-media-icons/twitter_logo.png" alt="mint green twitter logo in a circle">
+                </a>
+            </figure>
+
+            <figure>
+                <a href="#" title="link to future fitness club instagram page">
+                    <img src="../images/social-media-icons/instagram_logo.png"
+                        alt="mint green instagram logo in a circle">
+                </a>
+            </figure>
+
+            <figure>
+                <a href="#" title="link to future fitness club youtube channel">
+                    <img src="../images/social-media-icons/youtube_logo.png" alt="mint green youtube logo in a circle">
+                </a>
+            </figure>
+        </div>
+
+        <!--insert the left half of the footer text-->
+        <div id="left_footer">
+            <p>(814) 555-9608</p>
+            <p>forwardfitness@club.net</p>
+        </div>
+
+        <!--insert the right half of the footer text-->
+        <div id="right_footer">
+            <p>&copy; 2024 Forward Fitness</p>
+            <p>All Rights Reserved</p>
+        </div>
+
+
+        <!--insert the disclaimer-->
+        <div id="disclaimer">
+            <p>This fictitious website was created as an academic exercise for the Diablo Valley College course,
+                ARTDM-171: Web Design I. In no way should this content be considered or used as a source of factual
+                public information.</p>
+        </div>
+
+        <!--End of Footer-->
+    </footer>
+
+
+</body>
+
+</html>

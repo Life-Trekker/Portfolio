@@ -1,0 +1,514 @@
+/*CSS styles for lion information website*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, section, aside, figure, figcaption, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/************Body Rules************/
+
+/*these rules set the default background the the beanstalk pattern or to solid white when background images are disabled*/
+/*they also center align the text by default and set that text to 1.25rem sized K2D with a normal font weight and grey text color*/
+body{
+    background-color: white;
+    background-image: url(../images/beanstalk-dark.jpg);
+
+    text-align: center;
+    font-family:'K2D', Arial, sans-serif;
+    color: #2E3331;
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+
+/*these rules set the links on this page to have no decoration or underline and to be a green color by default*/
+body a{
+    text-decoration: none;
+    color: #0CD88B;
+}
+
+
+/************************************* Design for Mobile View *************************************/
+
+
+/************Mobile Header Rules************/
+
+/*these rules will cause the header to have a small bit of padding above and belowit*/
+header{
+    padding: 1% 0%;
+}
+
+/*these rules will scale the logo to the screen*/
+/*in order to not distort the logo image, it will get no larger than it's intended width of 200 pixels*/
+header figure img{
+    width: 40%;
+
+    max-width: 200px;
+}
+
+/************Mobile Nav Rules************/
+
+/*these rules will remove the beanstalk pattern from the nav area and add a forest green color in it's place*/
+/*it will also remove the bullet points from the list of links*/
+nav{
+    background-image: none;
+    background-color: #345C57;
+    list-style-type: none;
+}
+
+
+/*these rules will make the elements in the nav bar to be stacked vertically*/
+/*they will also place some padding and 2 pixels lines between each link*/
+nav li{
+    display: block;
+    border-top: 2px solid #C5DED5;
+    padding: 2% 0%;
+
+}
+
+/*these rules will make the first link the the nav list not have a line above it*/
+nav li:first-child{
+    border-top: none;
+}
+
+/*these rules will make the text in these links bold, 2rem in size and of a light mint color*/
+nav li a{
+
+    color: #C5DED5;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+/*the selected page class belongs to the link to the page we're currently on*/
+
+/*these rules will make the box that link is in have a light mint background*/
+.selected_page{
+    background-color: #C5DED5;
+
+}
+
+/*these rules will make that link be a grey color to stand out against to diffrent background*/
+.selected_page a{
+    color: #2E3331;
+}
+
+
+/************Mobile Main Rules************/
+
+/*these rules will make the main section of the webpage be solid white with no pattern*/
+main{
+    background-image: none;
+    background-color: white;
+
+}
+
+/*these rules will make the headings be bold, green and 2rems in size*/
+/*they will also place all headings inside beanstalk patterned boxes with a small margin above and below them*/
+h1{
+    color: #0CD88B;
+    font-weight: bold;
+    font-size: 2rem;
+
+    background-image: url(../images/beanstalk-dark.jpg);
+    margin: 10% 0%;
+    padding: 3% 0%;
+}
+
+/*these rules will only affect the first heading on the home page*/
+/*they will remove the margins above and below it*/
+.welcome_message{
+
+    margin: 0%;
+}
+
+/*these rules will make the subheadings be 1.5rems in size and have a small bit a padding around them*/
+h3{
+    font-size: 1.5rem;
+    padding: 3%;
+}
+
+/*these rules will make the paragraphs in webpage and padding along their sides*/
+main p{
+    padding: 0% 5%;
+}
+
+/*these rules will make the banners underneath the welcome heading to be hidden in mobile view*/
+.welcome_grid figure{
+    display: none;
+}
+
+/*these rules will make the button in the center of the homepage forest green with rounded corners*/
+/*they will also make the text in this button K2D font, normal weight, light mint color and 1.25rems in size*/
+button{
+
+    background-color: #345C57;
+    border: 5px solid #345C57;
+    border-radius: 10px;
+
+    padding: 5%;
+
+    font-family:'K2D', Arial, sans-serif;
+    color: #C5DED5;
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+
+/**/
+.bfastBtn, .lunchBtn, .dinnerBtn, .backBtn, .nextBtn{
+    padding: 1%;
+    margin: 2%;
+}
+
+/*these rules will make all images in the main section of the page have inset grey borders and take up 80% of their max width*/
+main img{
+    outline: 0.2rem #2E3331 solid;
+    outline-offset: -0.2rem;
+    width: 80%;
+    
+
+}
+
+/*these rules will make all images in the meal gallery centered with a 2% margin on the top and bottom*/
+/*it will also make them a minimum size of 300px by 300px*/
+#currentGallery img{
+    width: max(20vw, 300px);
+    height: max(20vw, 300px);
+    margin: 2% auto;
+}
+
+/*these rules will center all the images in their spaces*/
+/*in order to not distort these images, they will also make sure they get no larger than a width of 450 pixels*/
+main figure{
+    max-width: 450px;
+    margin: 0% auto;
+    
+}
+
+/*these rules will make the captions above each main image mint colored, bold and 1.5rems in size*/
+/*they will also place these captions in beanstalk patterned boxes, will center them in their spaces*/
+/*and will make them the same width as their images*/
+figcaption{
+    color: #0CD88B;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    background-image: url(../images/beanstalk-dark.jpg);
+
+    padding: 3% 0%;
+    margin: 0% auto;
+
+    width: 80%;
+
+
+}
+
+/*these rules will make the elements within the tile grids display as grids with a small gap between each row and column*/
+.tile_grid
+{
+
+    display: grid;
+    padding: 5% 0%;
+    gap: 1%;
+}
+
+
+/*these rules will make the paragraphs in the tile grids Khula font, bold and 1rems in size*/
+.tile_grid p{
+    font-family: 'Khula', 'Arial Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/*these rules will make the lists in the tile grid have no bullet points and have margins below and above them*/
+.tile_grid ul
+{
+    list-style-type: none;
+    margin: 5% 0%;
+
+}
+
+
+
+/************Mobile Footer Rules************/
+
+/*these rules will make the footer have a beanstalk patterned background and have some padding on all sides*/
+/*these rules will also make the text in the footer green colored and 1rem in size*/
+footer{
+    background-image: url(../images/beanstalk-dark.jpg);
+    padding: 5%;
+
+    color: #0CD88B;
+    font-size: 1rem;
+
+}
+
+/*these rules will make the elements in the footer grid display as a grid with two columns and 3 rows with a gap between each row and column*/
+.footer_grid{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    gap: 5%;
+    
+}
+
+/*these rules will make social media icons spread across both columns in the footer grid*/
+/*these rules will also make the social media icons display in their own 4 column grid inside the footer grid*/
+#social_icons{
+
+    grid-column: span 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+/*these rules will make social media icons in the footer have a width of 70%, getting no bigger than 5rem*/
+footer img{
+    width: 70%;
+    max-width: 5rem;
+ 
+}
+
+/*these rules will make the text in the left footer section left aligned and in the second row of the footer grid*/
+#left_footer{
+   text-align: left;
+
+   grid-row: 2;
+}
+
+/*these rules will make the text in the right footer section left aligned and in the second row of the footer grid*/
+#right_footer{
+    text-align: right;
+
+    grid-row: 2;
+}
+
+/*these rules will make the disclaimer text 0.8rems in size, in the third row of the footer grid and span two columns*/
+#disclaimer{
+    font-size: 0.8rem;
+
+
+    grid-row: 3;
+    grid-column: span 2;
+}
+
+/*whenever a button element is pressed, play an animation
+*/
+button:active{
+    animation: pressed 1s ease;
+}
+
+/*when an element gains the current class,
+have it play the easeIn animation
+*/
+.current{
+    animation: easeInRight 1s ease;
+}
+
+@keyframes easeInRight{
+    /*when the animation starts, blur the element and shift it to the right*/
+    0%{
+        filter: blur(8px);
+        transform: translateX(30px);
+    }
+
+    /*by the end of the animation, remove the blur and put it in the default place*/
+    100%{
+        filter: blur(0px);
+        transform: translateX(0px);
+    }
+
+}
+
+@keyframes easeInLeft{
+    /*when the animation starts, blur the element and shift it to the right*/
+    0%{
+        filter: blur(8px);
+        transform: translateX(-30px);
+    }
+
+    /*by the end of the animation, remove the blur and put it in the default place*/
+    100%{
+        filter: blur(0px);
+        transform: translateX(0px);
+    }
+
+}
+
+@keyframes pressed{
+    /*when the animation starts, shrink the element and give it an inset border*/
+    0%{
+        scale: 90%;
+        border-style: inset;
+    }
+
+    /*when the animation ends, set the element to a normal size and give it an outset border*/
+    100%{
+        scale: 100%;
+        border-style: outset;
+    }
+
+}
+
+/************************************* Media Query for Desktop View *************************************/
+@media screen and (min-width: 1015px){
+
+    /************Desktop Nav Rules************/
+
+     /*these rules will make the nav links display in a single row without borders between them*/
+    nav li{
+        display: inline-block;
+        width: 15%;
+        border: none;
+
+    }
+
+
+    /*this rule will make the nav link text turn gray when hovered over*/
+    nav li a:hover{
+        color: #2E3331;
+    }
+
+    /*this rule will make the nav link text turn green when clicked*/
+    nav li a:active{
+        color: #0CD88B;
+    }
+
+    /************Desktop Main Rules************/
+
+    /*these rules will make the welcome heading and two banner images display in a 2 x 2 grid on a beanstalk background*/
+    .welcome_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr;
+
+        background-image: url(../images/beanstalk-dark.jpg);
+    }
+
+    /*this rule will make the welcome heading span both columns on the first row*/
+    .welcome_grid h1{
+       grid-column: span 2;
+    }
+
+    /*these rules will make the two banner images display on the second row of the welcome grid*/
+    /*they will also center them in their cells*/
+    .welcome_grid figure{
+        max-width: none;
+        display: block;
+        grid-row: 2;
+
+        margin: 0 auto;
+    }
+
+    /*these rules will make the two banner images have solid gray borders and be their maximum width*/
+    /*they also remove the outline on these images and centers them in their grid cells*/
+    .welcome_grid img{
+        width: 100%;
+
+        outline: none;
+        border: 5px solid #2E3331;
+        margin: 0 auto;
+    }
+
+    /*this rule will remove the margin around headers*/
+    h1{
+        margin: 0%;
+    }
+
+    /*this rule will reduce the padding above and below the subheadings and increase the padding on the sides*/
+    h3{
+        padding: 1% 5%
+    }
+
+    /*these rules will make the paragraphs in the main page left aligned and will reduce the margin around them*/
+    .home_text{
+        text-align: left;
+
+        margin: 2% 0%;
+    }
+
+    /*this rule will make the button have a different size*/
+    button{
+        padding: 2%;
+    }
+
+    /*these rules will make the button change to gray when hovered over*/
+    .button:hover {
+        background-color: #2E3331;
+        border-color:  #2E3331;
+    }
+
+    /*this rule will make the outline on the three tiles on the home page change to green when hovered over*/
+    .category img:hover{
+
+        outline-color: #0CD88B;
+
+    }
+
+    /*this rule will make the tile grids have three columns on desktop viewports*/
+    .tile_grid{
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+
+
+    /*these rules will make the last text on the About Us page span all three columns of the tile grid and be left aligned*/
+    .last_aboutus_text{
+        grid-column: span 3;
+        text-align: left;
+
+    }
+
+    /************Desktop Footer Rules************/
+
+    /*this rule will make alter the padding and size of the footer*/
+    footer{
+        padding: 2% 5%;
+    }
+
+    /*these rules will make the footer grid 3 x 2 instead of 2 x 3*/
+    .footer_grid{
+    
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.2fr;  
+
+    }
+
+    /*these rules will make the social media icons display in the first row of the footer grid*/
+    /*they will also make them centered in their grid cell and not span multiple columns*/
+    #social_icons{
+        grid-row: 1;
+        grid-column: span 1;
+
+        margin: 0 auto;
+    
+    }
+
+    /*these rules will make the left footer text display in the first row and first column of the footer grid*/
+    #left_footer{
+     
+        grid-row: 1;
+        grid-column: 1;
+     }
+     
+    /*these rules will make the left footer text display in the first row and third column of the footer grid*/
+     #right_footer{     
+         grid-row: 1;
+         grid-column: 3;
+     }
+
+    /*these rules will make the disclaimer text display in the second row of the footer grid, spanning all three columns*/
+     #disclaimer{     
+        grid-row: 2;
+        grid-column: span 3;
+    }
+
+
+}
+
+
