@@ -1,24 +1,5 @@
 //Author: Josh T
 
-/*
-Summary:
-This program creates a digital score sheet for the board game 7 Wonders
-The base game of 7 Wonders has 7 different ways players can earn points
-There are 4 kinds of cards that grant points directly (they come in Red, Blue, Yellow and Purple)
-Players also gain points from their Wonder boards, coins and the collection of science symbols they have
-(For more information, go here: https://www.rprod.com/en/games/7-wonders)
-
-Player.h and Player.cpp contain the definition and implimentation of the Player class,
-which contains all the needed information to determine a player's final score
-
-Playerlist.h and Playerlist.cpp contain the definitions and implimentation of the PlayerNode and PlayerList classes,
-these are used to make a singly linked list of Player objects
-from this list, we can determine who won the game and we can output a table with everyone's scores
-in each catagory
-
-main.cpp contains functions that ask the user for all the information needed to make a score sheet
-it them presents that score sheet and lets them know who the winners are
-*/
 
 #include "playerlist.h" //for PlayerList
 
@@ -288,10 +269,11 @@ void getScoresFromUser(PlayerList* player_list)
                 
                 //update this player's score for the given source
                 //i = 0 is Military (Red) cards
-                //i = 2 is Wonder board
-                //i = 3 is Civil (Blue) cards
-                //i = 4 is Commercial (Yellow) cards
-                //i = 5 is Guilds (Guild) cards
+                //i = 1 is Wonder board
+                //i = 2 is Civil (Blue) cards
+                //i = 3 is Commercial (Yellow) cards
+                //i = 4 is Guilds (Guild) cards
+
                 if(i == 0) { curr_player->setCardScore( curr_player->getCardScores()[i] + input, i); }
                 else { curr_player->setCardScore( curr_player->getCardScores()[i - 1] + input, i - 1);   }
             }

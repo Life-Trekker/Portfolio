@@ -1,0 +1,3 @@
+I worked with a team of 4 other students to analyse the customer base of a e-commerce dataset using unsupervised machine learning. The customers were grouped into four general categories, and were then assigned behavioral personas.  We then used these categories to make reccommendations on buying trends and how to promote more buisness.
+I used RFM (Recency, Frequency, Monetary) analysis, K-Means clustering, and Fuzzy C-Means clustering.
+I was in charge of cleaning the data and preforming the K-Mean clustering.

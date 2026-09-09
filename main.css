@@ -33,11 +33,6 @@ body {
   font-family: Jura, Arial, Helvetica, sans-serif;
 }
 
-/* paragraphs are white and 14pt size */
-p {
-  color: white;
-  font-size: min(4vmin, 14pt);
-}
 
 
 
@@ -91,10 +86,18 @@ header img {
 
 }
 
+/* paragraphs are white and 24pt size */
+#about-section p {
+  color: white;
+  font-size: min(4vmin, 24pt);
+
+  text-align: center;
+}
+
 /* page heading is 36pt text with a radial gradient and glow*/
 #name-title {
   color: transparent;
-  font-size: min(6vmin, 36pt);
+  font-size: min(6vmin, 28pt);
 
   text-align: center;
   text-shadow: 0px 1px 20px #F47851;
