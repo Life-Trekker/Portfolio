@@ -1,6 +1,4 @@
 
-
-//include the servo library
 #include <Servo.h>
 
 //define constants for joy stick controls
@@ -8,21 +6,17 @@ const int STICK_PIN = 2;
 const int X_PIN = A1;
 const int Y_PIN = A0;
 
-//define constants for right and left lights
 const int RIGHT_LIGHT = 9;
 const int LEFT_LIGHT = 8;
 
-//define constants for right and left buttons
 const int RIGHT_BUTTON = 12;
 const int LEFT_BUTTON = 13;
 
-//define constant for buzzer
 const int BUZZER = 11;
 
-//define constant for servo
 const int SERVO_PIN = 6;
 
-//define servo
+
 Servo myservo;
 
 //define int for the position of the servo
@@ -34,10 +28,10 @@ int pos = 0;
 #define CHECK_INTERVAL 10
 
 //create variables to track the last executed times for all intervals
-unsigned long lastExecutedMillis1 = 0;
-unsigned long lastExecutedMillis2 = 0;
-unsigned long lastExecutedMillis3 = 0;
-unsigned long lastExecutedMillis4 = 0;
+unsigned long lastExecutedMillisTurning = 0;
+unsigned long lastExecutedMillisBlinker = 0;
+unsigned long lastExecutedMillisFlash = 0;
+unsigned long lastExecutedMillisBuzzer = 0;
 
 //create ints to determine whether each light has been toggled on or off
 int toggleValueRight = -1;
@@ -56,16 +50,13 @@ unsigned long currentMillis = 0;
 
 void setup() {
 
-  //set the pin mode of the control pins going to the lights and buzzer to output
   pinMode(RIGHT_LIGHT, OUTPUT);
   pinMode(LEFT_LIGHT, OUTPUT);
   pinMode(BUZZER, OUTPUT);
 
-  //set the pin mode of the control pins going to the buttons to input
   pinMode(RIGHT_BUTTON, INPUT);
   pinMode(LEFT_BUTTON, INPUT);
 
-  //attach the servo to the servo control pin
   myservo.attach(SERVO_PIN);
 }
 
@@ -74,10 +65,9 @@ void loop() {
   //set the currentMillis to the number of milliseconds since the program began
   currentMillis = millis();
 
-  //excute this statement everytime the Turn Interval time has passed
-  if (currentMillis - lastExecutedMillis1 >= TURN_INTERVAL) {
+  if (currentMillis - lastExecutedMillisTurning >= TURN_INTERVAL) {
     //save the last executed time
-    lastExecutedMillis1 = currentMillis;
+    lastExecutedMillisTurning = currentMillis;
 
     //if the stick isn't in the neutral position,
     if (analogRead(Y_PIN) != 512 || analogRead(X_PIN) != 512) {
@@ -112,9 +102,9 @@ void loop() {
   leftButtonOldVal = leftButtonOldVal;
 
   //excute this statement everytime the Blink Interval time has passed
-  if (currentMillis - lastExecutedMillis2 >= BLINK_INTERVAL) {
+  if (currentMillis - lastExecutedMillisBlinker >= BLINK_INTERVAL) {
     //save the last executed time
-    lastExecutedMillis2 = currentMillis;
+    lastExecutedMillisBlinker = currentMillis;
 
     //if the right button is toggled on,
     if(toggleValueRight == 1)
@@ -134,10 +124,10 @@ void loop() {
 
   }
 
-  //excute this statement everytime the Blink Interval time has passed
-  if (currentMillis - lastExecutedMillis3 >= BLINK_INTERVAL * 2) {
+  //excute this statement every other time the Blink Interval time has passed
+  if (currentMillis - lastExecutedMillisFlash >= BLINK_INTERVAL * 2) {
     //save the last executed time
-    lastExecutedMillis3 = currentMillis;
+    lastExecutedMillisFlash = currentMillis;
 
     //turn both lights off
     //this will cause the lights to flash when toggled on
@@ -149,9 +139,9 @@ void loop() {
 
 // 
   //excute this statement everytime the Check Interval time has passed
-  if (currentMillis - lastExecutedMillis4 >= CHECK_INTERVAL) {
+  if (currentMillis - lastExecutedMillisBuzzer >= CHECK_INTERVAL) {
     //save the last executed time
-    lastExecutedMillis4 = currentMillis;
+    lastExecutedMillisBuzzer = currentMillis;
 
     //if the right light is on but the servo is turned left
     //or if the left light is on but the servo is turned right
