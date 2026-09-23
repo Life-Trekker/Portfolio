@@ -28,6 +28,13 @@ function Home() {
             <div className="header" 
             style={{backgroundColor: secondDarkestColor}}>
                 <img src={logo} alt="Diamond JT Logo" />
+
+                <form>
+                    <button type="submit">
+                        Change Colors
+                    </button>
+                </form>
+
             </div>
 
 

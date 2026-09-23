@@ -25,11 +25,9 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 
-  align-items: center;
-  justify-items: center;
 
   margin: auto;
   padding: 1%;
@@ -37,8 +35,25 @@ body {
 
 
 .header img {
-
+  
   width: 20%;
+}
+
+.header form {
+  justify-self: end;
+}
+
+.header button {
+
+  min-height: 100%;
+
+  border: 2px solid white;
+  border-radius: 10%;
+
+  background-color: transparent;
+  color: white;
+
+  padding: 2%;
 }
 
 .about-section {
@@ -196,7 +211,7 @@ body {
 @media only screen and (min-width : 1200px) {
 
   .header img {
-    width: 5%;
+    width: 10%;
   }
 
   .projects-section {
