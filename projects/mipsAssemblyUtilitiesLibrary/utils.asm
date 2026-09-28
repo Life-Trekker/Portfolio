@@ -864,9 +864,9 @@ jr $ra
 
 
 # Subprogram Name:  sumArray
-# Purpose:  To find the largest element in an integer array
+# Purpose:  To find the sum of all the elements in an integer array
 # Parameters: $a0 - the number of items in the array
-# Returns:  $v0 - the largest element
+# Returns:  $v0 - the sum of all array elements
 # Side Effects: none
 .text
 sumArray:

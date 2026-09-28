@@ -200,10 +200,13 @@ body {
 
 
   transition: opacity 0.2s ease;
+  transition: translateY 0.2s ease;
 }
+
 
 .contact-section img:hover {
   opacity: 50%;
+  transform: translateY(-5px);
   transition: all 0.2s ease;
 }
 
