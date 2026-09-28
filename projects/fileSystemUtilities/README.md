@@ -9,6 +9,6 @@ ds3ls - outputs the contents of a directory\
 ds3mkdir - creates a new directory\
 ds3touch - creates a new file\
 ds3cp - copies a file from the computer onto the disk image\
-ds3rm - removes a file or empty directory\
+ds3rm - removes a file or empty directory
 
 This project involved on-disk data structures, block allocation, bitmap management and path resolution.  It also required careful error handling for unique cases like invalid paths, full disks or missing files.
