@@ -64,7 +64,7 @@ function Home() {
                 
                 <ProjectCard title="E-Commerce Customer Analysis" image={eCommerceLogo} link="https://github.com/Life-Trekker/Portfolio/tree/main/projects/eCommerceUnsupervisedModel"/>
                 <ProjectCard title="Linux File System Utilities" image={fileSystemLogo} link="https://github.com/Life-Trekker/Portfolio/tree/main/projects/fileSystemUtilities"/>
-                <ProjectCard title="Star Wars Character Search Engine" image={starWarsSearchLogo} link=".../projects/starWarsCharacterSearch/"/>
+                <ProjectCard title="Star Wars Character Search Engine" image={starWarsSearchLogo} link="https://github.com/Life-Trekker/Portfolio/tree/main/projects/starWarsCharacterSearch"/>
                 <ProjectCard title="Avenue E Transportation Project Prototype" image={transportationLogo} link="https://github.com/Life-Trekker/Portfolio/tree/main/projects/avenueETransportationProject"/>
                 <ProjectCard title="7 Wonders Virtual Score Sheet" image={sevenWondersLogo} link="https://github.com/Life-Trekker/Portfolio/tree/main/projects/digital7WondersScoreSheet"/>
                 <ProjectCard title="MIPS Assembly Utilities Library" image={mipsProjectLogo} link="https://github.com/Life-Trekker/Portfolio/tree/main/projects/mipsAssemblyUtilitiesLibrary"/>
